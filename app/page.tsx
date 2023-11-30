@@ -1,5 +1,9 @@
+import Footer from '@/components/Footer'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
+import { MyAccord } from '@/components/MyAccord'
 import NavBar from '@/components/NavBar'
+
+
 // import ProductReel from '@/components/ProductReel'
 import {
   Button,
@@ -36,10 +40,10 @@ const perks = [
 export default function Home() {
   return (
     <>
-    <MaxWidthWrapper>
-      <NavBar>  
-      </NavBar>
-    </MaxWidthWrapper>
+      <MaxWidthWrapper>
+        <NavBar>
+        </NavBar>
+      </MaxWidthWrapper>
       <MaxWidthWrapper>
         <div className='py-20 mx-auto text-center flex flex-col items-center max-w-3xl'>
           <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
@@ -98,6 +102,12 @@ export default function Home() {
             ))}
           </div>
         </MaxWidthWrapper>
+
+        <MaxWidthWrapper>
+          <MyAccord/>
+        </MaxWidthWrapper>
+
+        <Footer />
       </section>
     </>
   )
